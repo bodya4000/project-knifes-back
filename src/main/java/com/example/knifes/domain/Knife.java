@@ -1,4 +1,4 @@
-package com.example.knifes;
+package com.example.knifes.domain;
 
 import java.util.Random;
 

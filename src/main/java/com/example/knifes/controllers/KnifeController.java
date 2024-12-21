@@ -1,6 +1,10 @@
-package com.example.knifes;
+package com.example.knifes.controllers;
 
 
+import com.example.knifes.models.FilterRequestDto;
+import com.example.knifes.models.KnifeDetailDto;
+import com.example.knifes.models.KnifeDto;
+import com.example.knifes.services.KnifeService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;

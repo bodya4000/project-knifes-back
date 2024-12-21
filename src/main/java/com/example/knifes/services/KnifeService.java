@@ -1,6 +1,9 @@
-package com.example.knifes;
+package com.example.knifes.services;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
+import com.example.knifes.domain.Knife;
+import com.example.knifes.models.FilterRequestDto;
+import com.example.knifes.models.KnifeDetailDto;
+import com.example.knifes.models.KnifeDto;
 import org.springframework.stereotype.Service;
 
 import java.util.*;

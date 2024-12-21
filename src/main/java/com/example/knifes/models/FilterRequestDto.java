@@ -1,4 +1,4 @@
-package com.example.knifes;
+package com.example.knifes.models;
 
 public record FilterRequestDto(
         MaxMinDto price,
