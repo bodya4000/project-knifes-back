@@ -8,6 +8,7 @@ com/example/knifes/KnifesApplication.class
 com/example/knifes/domain/User.class
 com/example/knifes/security/JwtParser.class
 com/example/knifes/security/JwtBuilder.class
+com/example/knifes/controllers/ImageController.class
 com/example/knifes/models/FilterRequestDto.class
 com/example/knifes/domain/Knife.class
 com/example/knifes/dao/UserRepository.class

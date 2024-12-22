@@ -29,7 +29,7 @@ public class Knife {
     private static final String[] sharpeningAndPolishingMethods = {"GOI Paste", "Diamond Paste", "Sharpening Stones", "Sharpening Systems"};
     private static final String[] knifeWorkshopOptions = {"Knife Workshop", "Blanks for Knives", "Knife Casting", "Handle Materials", "Handle Care"};
     private static final String[] imageUrls = {
-            "https://s3-alpha-sig.figma.com/img/db5d/a405/9119948e1790547709e6efe5694a030b?Expires=1731888000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=G08sIRkMutB6SlLt6R~QKr2fysj-aRA4XECTp4ia9M868KQllTVDSovherwQ4jmzlNVMfH3SGzToJB9RRJqiDKietaK38t~LOdbyCaTZsAzkivxZEg3O-W7Ugx70-lOY2V9tLbfAH04rdLNgKI0FTgxxDkRAPISPSXtD9SMpmiHFFmhelrOFTBlHEwXzTGR3BsbGu-zAXym824i1J7BoVrT39TEoDRfoWm52hPtx9mYdZbYfU4q6iIqSyXelpZFflWwr2pbw-RhzCmneoZgLgbd0Oi1MjkMhLR5ti4Y3fTsvT85HzDNveSYTrBihA2FAMueGIpjACvEiAtKCQzm5BQ__",
+            "https://cdn.sanity.io/images/fr9flhkd/main/0f0911c4dbe2920dd2699cf252d33510d323b8cf-1500x1500.jpg?fm=webp&q=75&w=1280",
             "https://cdn11.bigcommerce.com/s-43l4b17cyb/images/stencil/1280w/products/608/8171/F041TN-CP_product_alt_5__78873__11941.1579023102.jpg?c=2",
             "https://www.huntingandknives.co.uk/pub/media/catalog/product/cache/459300f1b5bd3c38ffb32210b0c2c42e/s/e/set-of-2-third-h7125-blue-throwing-knives.jpg",
             "https://www.huntingandknives.co.uk/pub/media/catalog/product/cache/459300f1b5bd3c38ffb32210b0c2c42e/s/e/set-of-2-third-h7125-blue-throwing-knives.jpg",

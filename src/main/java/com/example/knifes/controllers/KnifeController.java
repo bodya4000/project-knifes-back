@@ -5,6 +5,7 @@ import com.example.knifes.models.FilterRequestDto;
 import com.example.knifes.models.KnifeDetailDto;
 import com.example.knifes.models.KnifeDto;
 import com.example.knifes.services.KnifeService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -45,6 +46,7 @@ public class KnifeController {
     }
 
     @GetMapping("/options")
+    @Cacheable
     public Map<String, Object> getOptions(
     ) {
         return KnifeService.loadOptions();
