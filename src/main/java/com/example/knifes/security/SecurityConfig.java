@@ -44,11 +44,13 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .csrf(AbstractHttpConfigurer::disable)
                 .authorizeHttpRequests( authrs -> {
                     authrs.requestMatchers(HttpMethod.OPTIONS, "/**").permitAll(); // Дозволяємо preflight-запити
+                    authrs.requestMatchers("/images/**").permitAll();
                     authrs.requestMatchers("/knives").authenticated();
                     authrs.requestMatchers("/knives/**").authenticated();
                     authrs.requestMatchers("/options").authenticated();
                     authrs.requestMatchers("/user/auth").permitAll();
                     authrs.requestMatchers("/user/auth/create").permitAll();
+                    authrs.requestMatchers("/user/auth/ping").authenticated();
 
                 })
                 .sessionManagement(sessionManagementConfigurer -> sessionManagementConfigurer.sessionCreationPolicy(SessionCreationPolicy.STATELESS))

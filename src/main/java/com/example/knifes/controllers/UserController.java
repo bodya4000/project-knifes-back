@@ -37,10 +37,15 @@ public class UserController {
     @PostMapping("/create")
     public ResponseEntity<Object> create(@RequestBody AuthRequest authRequest) {
         var jwt = userService.create(authRequest.phoneNumber(), authRequest.password());
+        System.out.println("jwt = " + jwt);
         if (jwt != null) {
             return ResponseEntity.ok(new DefaultResponse(HttpStatus.OK.value(), "Successful register", Map.of("accessToken", jwt)));
         }
         return ResponseEntity.ok(new DefaultResponse(HttpStatus.FORBIDDEN.value(), "Wrong credentials", Map.of()));
     }
 
+    @PostMapping("/ping")
+    public ResponseEntity<Object> ping() {
+        return ResponseEntity.ok(new DefaultResponse(HttpStatus.OK.value(), "Valid access token", Map.of("ping", "pong")));
+    }
 }

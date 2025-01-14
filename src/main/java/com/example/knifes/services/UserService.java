@@ -46,6 +46,7 @@ public class UserService implements UserDetailsService {
 
     public String create(String phoneNumber, String password) {
         System.out.println("register..");
+        System.out.println(userRepository.userExistsByPhoneNumber(phoneNumber));
         if (userRepository.userExistsByPhoneNumber(phoneNumber)) return null;
         var user = this.save(phoneNumber,password);
         return this.tokenFactory.createJwt(user);

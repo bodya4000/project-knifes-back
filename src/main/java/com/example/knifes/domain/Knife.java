@@ -28,20 +28,18 @@ public class Knife {
     public static final String[] steelGrades = {"40x102c2m", "95x8", "100x13", "110x18"};
     private static final String[] sharpeningAndPolishingMethods = {"GOI Paste", "Diamond Paste", "Sharpening Stones", "Sharpening Systems"};
     private static final String[] knifeWorkshopOptions = {"Knife Workshop", "Blanks for Knives", "Knife Casting", "Handle Materials", "Handle Care"};
+    private static final String host = "http://localHost:8081/";
+//    private static final String host = "https://localHost:8081/";
     private static final String[] imageUrls = {
-            "https://cdn.sanity.io/images/fr9flhkd/main/0f0911c4dbe2920dd2699cf252d33510d323b8cf-1500x1500.jpg?fm=webp&q=75&w=1280",
-            "https://cdn11.bigcommerce.com/s-43l4b17cyb/images/stencil/1280w/products/608/8171/F041TN-CP_product_alt_5__78873__11941.1579023102.jpg?c=2",
-            "https://www.huntingandknives.co.uk/pub/media/catalog/product/cache/459300f1b5bd3c38ffb32210b0c2c42e/s/e/set-of-2-third-h7125-blue-throwing-knives.jpg",
-            "https://www.huntingandknives.co.uk/pub/media/catalog/product/cache/459300f1b5bd3c38ffb32210b0c2c42e/s/e/set-of-2-third-h7125-blue-throwing-knives.jpg",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjddpwsVcntmsuWyc_nw4yinsPnPi_yCviw&s",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjddpwsVcntmsuWyc_nw4yinsPnPi_yCviw&s",
-            "https://www.swiss-knife.com/media/catalog/product/cache/7adce2c7f898670e8b9c2115b1d83238/p/k/pk-11a-best-of-switzerland_def.jpg",
-            "https://cdn11.bigcommerce.com/s-43l4b17cyb/images/stencil/1280w/products/608/8171/F041TN-CP_product_alt_5__78873__11941.1579023102.jpg?c=2",
-            "https://cdn.sanity.io/images/fr9flhkd/main/397a12dce06c63bcb33cc4774bcd412095ccedb4-1500x1500.jpg?fm=webp&q=75&w=1280",
-            "https://cdn11.bigcommerce.com/s-46csjp/images/stencil/1280x1280/products/7132/35384/TTK-H6W-Hunting-Camp-Knife__32019.1674105348.jpg?c=2",
-            "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyQHa8LHlX_dq8TDu557zag9dm91I6iAiPzA&s",
-            "https://frontierblades.com/cdn/shop/products/57_f8f08337-8fea-4478-b69a-522f78075794_1200x1200.jpg?v=1579887164"
-    };
+        host+"images/knife_1.webp",
+        host+"images/knife_2.webp",
+        host+"images/knife_3.webp",
+        host+"images/knife_4.webp",
+        host+"images/knife_5.webp",
+        host+"images/knife_6.webp",
+        host+"images/knife_7.webp",
+        host+"images/knife_8.webp",
+};
     public static final double[] bladeWidths = {2.50, 3.00, 3.50, 4.00, 4.50};
     public static final double[] bladeLengths = {10.00, 12.00, 15.00, 18.00, 20.00};
     public static final double[] overallLengths = {20.00, 25.00, 30.00, 35.00, 40.00};
