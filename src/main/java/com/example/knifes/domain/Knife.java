@@ -28,8 +28,8 @@ public class Knife {
     public static final String[] steelGrades = {"40x102c2m", "95x8", "100x13", "110x18"};
     private static final String[] sharpeningAndPolishingMethods = {"GOI Paste", "Diamond Paste", "Sharpening Stones", "Sharpening Systems"};
     private static final String[] knifeWorkshopOptions = {"Knife Workshop", "Blanks for Knives", "Knife Casting", "Handle Materials", "Handle Care"};
-    private static final String host = "http://localHost:8081/";
-//    private static final String host = "https://localHost:8081/";
+//    private static final String host = "http://localHost:8081/";
+    private static final String host = "https://project-knifes-back.onrender.com/";
     private static final String[] imageUrls = {
         host+"images/knife_1.webp",
         host+"images/knife_2.webp",
