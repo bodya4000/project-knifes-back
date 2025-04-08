@@ -12,6 +12,7 @@ com/example/knifes/controllers/ImageController.class
 com/example/knifes/models/FilterRequestDto.class
 com/example/knifes/domain/Knife.class
 com/example/knifes/dao/UserRepository.class
+com/example/knifes/controllers/AppController.class
 com/example/knifes/services/KnifeService.class
 com/example/knifes/models/KnifeDetailDto.class
 com/example/knifes/builders/UserBuilder.class
