@@ -45,6 +45,8 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .authorizeHttpRequests( authrs -> {
                     authrs.requestMatchers(HttpMethod.OPTIONS, "/**").permitAll(); // Дозволяємо preflight-запити
                     authrs.requestMatchers("/images/**").permitAll();
+                    authrs.requestMatchers("/").permitAll();
+                    authrs.requestMatchers("/health").permitAll();
                     authrs.requestMatchers("/knives").authenticated();
                     authrs.requestMatchers("/knives/**").authenticated();
                     authrs.requestMatchers("/options").authenticated();
