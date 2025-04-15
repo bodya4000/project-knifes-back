@@ -13,7 +13,7 @@ import java.util.Date;
 public class JwtUtil {
     private String secret = "W5Eca1S9aAf8l8Q6tVV1g5KrJyHUZ+BYi/GRpm1KhdQ=";
 
-    private Duration jwtLifetime = Duration.ofDays(1);
+    private Duration jwtLifetime = Duration.ofMinutes(1);
 
     public Key getSignKey(){
         byte[] keyBytes = Decoders.BASE64.decode(secret);

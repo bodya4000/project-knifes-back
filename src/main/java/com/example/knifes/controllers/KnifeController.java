@@ -18,7 +18,7 @@ public class KnifeController {
 
     @PostMapping("/knives")
     public Map<String, Object> getKnives(
-        @RequestParam(defaultValue = "0") int page,
+        @RequestParam(defaultValue = "1") int page,
         @RequestParam(defaultValue = "20") int size,
         @RequestParam(required = false,  defaultValue = "questioners", name = "sort") String sortMode,
         @RequestBody FilterRequestDto filterRequestDto
@@ -28,7 +28,7 @@ public class KnifeController {
         int totalKnives = allKnives.size();
         int totalPages = (int) Math.ceil((double) totalKnives / size);
 
-        int start = Math.min(page * size, totalKnives);
+        int start = Math.min((page) * size, totalKnives);
         int end = Math.min(start + size, totalKnives);
         List<KnifeDto> knivesPage = allKnives.subList(start, end);
 

@@ -6,6 +6,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.dao.DaoAuthenticationProvider;
+import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -42,6 +43,7 @@ public class SecurityConfig implements WebMvcConfigurer {
                 .formLogin(AbstractHttpConfigurer::disable)
                 .httpBasic(AbstractHttpConfigurer::disable)
                 .csrf(AbstractHttpConfigurer::disable)
+                .cors(Customizer.withDefaults())
                 .authorizeHttpRequests( authrs -> {
                     authrs.requestMatchers(HttpMethod.OPTIONS, "/**").permitAll(); // Дозволяємо preflight-запити
                     authrs.requestMatchers("/images/**").permitAll();
